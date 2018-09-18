@@ -1,0 +1,25 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12pt;
+    background-color: #F7F7F7;
+    width: 325px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 70%;
+}
+
+p {
+    line-height: 200%;
+}
+
+header, article {
+    margin-bottom: 20pt;
+}
