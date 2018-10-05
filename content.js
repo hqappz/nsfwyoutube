@@ -2,6 +2,12 @@
 
 console.log("nsfwyoutube by hqappz is loaded :D");
 
+//5
+
+function addbutton() {
+    console.log("no kurła");
+    document.querySelector("#container > h1 > yt-formatted-string").innerHTML += '<span id="nsfwbutton" style="color: #e21; border: 1pt solid #e21; border-radius: 1.5pt; padding: 2px 4px; font-weight: 500; line-height: 1.2rem; position: absolute; margin-top: 2px; margin-left: 5px;">NSFW</span>';
+}
 
 // 4
 
@@ -22,6 +28,7 @@ function hentaichecker() {
                 console.log(document.querySelectorAll('ytd-metadata-row-renderer > div > yt-formatted-string > a[href="http://www.youtube.com/t/community_guidelines"]').length >= 1);
                 console.log('video is age restricted');
                 bypass();
+                addbutton();
             }
         }, 5000);
 }
@@ -29,14 +36,4 @@ function hentaichecker() {
 
 // 2
 
-var kurentjuerel = window.location.href;
 hentaichecker();
-/*
-setInterval(function () {
-    if (kurentjuerel != window.location.href) {
-        console.log("Zmienia sie? " + kurentjuerel);
-        kurentjuerel = window.location.href;
-        console.log("Jak tak to tak" + kurentjuerel);
-        hentaichecker();
-    }
-}, 5000);*/
