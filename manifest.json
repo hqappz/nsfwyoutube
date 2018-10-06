@@ -16,5 +16,5 @@
       "default_title": "NSFW YouTube by HQAPPZ",
       "default_popup": "popup.html"
     },
-    "permissions": ["storage", "https://*.youtube.com/", "tabs"]
+    "permissions": ["storage", "https://*.youtube.com/"]
   }
