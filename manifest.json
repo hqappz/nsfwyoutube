@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "NSFW YouTube: Bypass for age restricted content",
     "description": "Addon that can unlock age restricted content on YouTube without creating an account.",
-    "version": "0.65",
+    "version": "0.67",
     "author": "HQAPPZ",
     "content_scripts": [{
       "matches": [
@@ -16,5 +16,5 @@
       "default_title": "NSFW YouTube by HQAPPZ",
       "default_popup": "popup.html"
     },
-    "permissions": ["storage", "https://*.youtube.com/", "tabs"]
+    "permissions": ["storage", "https://*.youtube.com/"]
   }
