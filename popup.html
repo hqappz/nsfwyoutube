@@ -5,6 +5,20 @@
     <title>nsfwyoutube addon popup window</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script id="content"></script>
+    <script>
+        function load() {
+            var checkbox = document.getElementById("content_flip");
+            var script = document.getElementById('content');
+            
+            if(checkbox.checked) {
+                script.src = 'content.js';
+            }
+            else {
+                script.src = '';
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -15,7 +29,7 @@
         <p>NSFW YouTube is an addon that can unlock age restricted content on YouTube without creating an YouTube
             account.</p>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" id="content_flip" onclick="load()">
             <span class="slider round"></span>
         </label>
     </article>
